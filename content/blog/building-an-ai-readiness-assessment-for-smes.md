@@ -2,6 +2,7 @@
 title: "Building an AI Readiness Assessment for SMEs"
 date: 2026-03-30
 description: "What building a 5-minute AI readiness assessment taught me about AI adoption in smaller businesses."
+image: "/images/blog/building-ai-readiness-assessment-for-smes.jpg"
 ---
 
 Earlier this year I decided to leave the BBC and set up a consulting practice helping SMEs adopt AI into their workflows.

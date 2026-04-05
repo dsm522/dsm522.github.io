@@ -2,6 +2,7 @@
 title: "Responsible AI in the BBC Newsroom"
 date: 2026-03-18
 description: "What it takes to move a generative AI tool from R&D into a live newsroom without losing trust, accountability or editorial control."
+image: "/images/blog/responsible-ai-bbc-newsroom.jpg"
 ---
 
 The BBC recently announced two generative AI pilots for its newsrooms. One of them is BBC Style Assist, an LLM that takes stories from the Local Democracy Reporting Service and rewrites them into BBC house style.
