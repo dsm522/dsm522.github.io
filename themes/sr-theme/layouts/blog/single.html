@@ -1,0 +1,33 @@
+{{ define "main" }}
+<div class="post-page">
+  <div class="post-container">
+    <a href="/#blog" class="post-back">← Back to posts</a>
+    
+    <header class="post-header">
+      <p class="post-date">{{ .Date.Format "2 January 2006" }}</p>
+      <h1 class="post-title">{{ .Title }}</h1>
+      <div class="post-meta">
+        <span>By Sanjiv Ranjan</span>
+        <span>·</span>
+        <span>{{ .ReadingTime }} min read</span>
+      </div>
+      <div class="post-divider"></div>
+    </header>
+    
+    {{ with .Params.image }}
+    <div class="post-image">
+      <img src="{{ . }}" alt="{{ $.Title }}" style="width:100%;max-width:800px;border-radius:8px;margin-bottom:2rem;">
+    </div>
+    {{ end }}
+
+    <div class="post-content">
+      {{ .Content }}
+    </div>
+    
+    <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);">
+      <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:1rem;">Found this useful? Connect with me on LinkedIn.</p>
+      <a href="https://www.linkedin.com/in/sanjivranjanuk/" target="_blank" rel="noopener" class="btn btn-secondary" style="display:inline-flex;">Connect on LinkedIn →</a>
+    </div>
+  </div>
+</div>
+{{ end }}

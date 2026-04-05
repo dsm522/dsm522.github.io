@@ -1,0 +1,136 @@
+{{ define "main" }}
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="hero-container">
+    <p class="hero-eyebrow">AI Transformation &amp; Delivery</p>
+    <h1 class="hero-name">Sanjiv Ranjan<br><span style="font-size:0.55em;font-weight:300;color:var(--text-secondary)">MEng, ChPP</span></h1>
+    <p class="hero-tagline">AI Adoption &amp; Transformation Leader</p>
+    <p class="hero-subtitle">25 years shipping technology at scale. From C++ to AI agents.</p>
+    <div class="hero-cta">
+      <a href="/#what-i-do" class="btn btn-primary">What I Do</a>
+      <a href="https://www.linkedin.com/in/sanjivranjanuk/" target="_blank" rel="noopener" class="btn btn-secondary">Connect on LinkedIn</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="6 9 12 15 18 9"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ===== WHAT I DO ===== -->
+<section class="what-i-do" id="what-i-do">
+  <div class="section-container">
+    <div class="section-header">
+      <p class="section-label">Expertise</p>
+      <h2 class="section-title">What I Do</h2>
+    </div>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon">🚀</div>
+        <h3 class="card-title">AI Adoption &amp; Transformation</h3>
+        <p class="card-body">I help organisations move from AI experimentation to production. Strategy, governance, delivery. Not the theory — the doing.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">⚙️</div>
+        <h3 class="card-title">Programme &amp; Delivery Leadership</h3>
+        <p class="card-body">20+ years making complex technology ship. Agile at scale, portfolio management, cross-functional alignment. I've done this across BBC, startups, and everything in between.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🛡️</div>
+        <h3 class="card-title">AI Governance &amp; Ethics</h3>
+        <p class="card-body">Building human oversight models, editorial governance for AI content, responsible AI frameworks. Imperial Business School Executive Education.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">✍️</div>
+        <h3 class="card-title">Thought Leadership</h3>
+        <p class="card-body">Writing and speaking about how AI is evolving how we work. Weekly LinkedIn series on AI adoption — practical, not hype.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about" id="about">
+  <div class="section-container">
+    <div class="section-header">
+      <p class="section-label">Background</p>
+      <h2 class="section-title">About Me</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I've spent my career at the intersection of technology and getting things done — spotting paradigm shifts early, getting hands-on fast, and figuring out what they mean for real organisations.</p>
+        <p>It started in the mid-90s: building C++ GUI apps for SITA on ISDN terminals. I could see the internet was about to change everything, so I jumped to a startup on nothing more than "I'm a fast learner" — and spent the next 7 years building payment systems, music streaming, and video platforms before most people had broadband.</p>
+        <p>I moved into delivery and programme leadership, spending 15 years at the BBC managing portfolios across iPlayer, Sounds, News and Sport — scaling agile across 100+ teams. Along the way, I worked with early AI, delivering NLP and text mining solutions at Nstein Technologies back in 2008.</p>
+        <p>Now I'm going through that same paradigm shift again — this time with agentic AI. Not the theoretical kind. I deploy AI agents that build applications, manage workflows, and operate autonomously. Currently completing AI &amp; Business Transformation at Imperial Business School.</p>
+        <p><strong>What I bring:</strong></p>
+        <ul class="about-list">
+          <li>Pattern recognition — I've navigated these pivots before</li>
+          <li>Hands-on credibility — I build with AI daily</li>
+          <li>Organisational fluency — I make new tech work inside real businesses</li>
+          <li>Delivery rigour — 20+ years of making complex things ship</li>
+        </ul>
+      </div>
+      <div class="highlights">
+        <div class="highlight-item">
+          <div class="highlight-label">Experience</div>
+          <div class="highlight-value">25+ years in technology</div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-label">BBC</div>
+          <div class="highlight-value">15 years — iPlayer, Sounds, News &amp; Sport</div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-label">Scale</div>
+          <div class="highlight-value">100+ teams scaled with Agile</div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-label">Current Study</div>
+          <div class="highlight-value">AI &amp; Business Transformation — Imperial Business School</div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-label">Education</div>
+          <div class="highlight-value">MEng Computer Systems Engineering — University of Manchester</div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-label">Credentials</div>
+          <div class="highlight-value">ChPP · SAFe Agilist · AgilePgM</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BLOG ===== -->
+<section class="blog" id="blog">
+  <div class="section-container">
+    <div class="section-header">
+      <p class="section-label">Writing</p>
+      <h2 class="section-title">Latest Posts</h2>
+    </div>
+    <div class="blog-grid">
+      {{ $posts := (where .Site.RegularPages "Section" "blog") }}
+      {{ range first 3 ($posts.ByDate.Reverse) }}
+      <article class="blog-card">
+        <div class="blog-card-inner">
+          {{ if .Params.image }}
+          <a href="{{ .Permalink }}">
+            <img src="{{ .Params.image }}" alt="{{ .Title }}" style="width:100%;border-radius:6px;margin-bottom:1rem;aspect-ratio:16/9;object-fit:cover;">
+          </a>
+          {{ end }}
+          <p class="blog-date">{{ .Date.Format "2 January 2006" }}</p>
+          <h3 class="blog-title">
+            <a href="{{ .Permalink }}" style="color:inherit;text-decoration:none;">{{ .Title }}</a>
+          </h3>
+          <p class="blog-excerpt">{{ .Summary | truncate 160 }}</p>
+          <a href="{{ .Permalink }}" class="blog-read-more">Read more →</a>
+        </div>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ end }}

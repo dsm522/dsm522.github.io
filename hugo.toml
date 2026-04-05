@@ -1,0 +1,31 @@
+baseURL = '/'
+languageCode = 'en-gb'
+title = 'Sanjiv Ranjan'
+theme = 'sr-theme'
+
+[params]
+  description = "AI Adoption & Transformation Leader. 25 years shipping technology at scale."
+  author = "Sanjiv Ranjan"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menus]
+  [[menus.main]]
+    name = "What I Do"
+    url = "/#what-i-do"
+    weight = 1
+  [[menus.main]]
+    name = "About"
+    url = "/#about"
+    weight = 2
+  [[menus.main]]
+    name = "Blog"
+    url = "/#blog"
+    weight = 3
+  [[menus.main]]
+    name = "Contact"
+    url = "/#contact"
+    weight = 4

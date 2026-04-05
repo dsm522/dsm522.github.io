@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div class="post-page">
+  <div class="post-container">
+    <h1 class="post-title" style="margin-bottom:3rem;">{{ .Title }}</h1>
+    {{ range .Pages.ByDate.Reverse }}
+    <article style="margin-bottom:2rem;padding-bottom:2rem;border-bottom:1px solid var(--border);">
+      <p class="blog-date">{{ .Date.Format "2 January 2006" }}</p>
+      <h2 style="font-family:var(--font-serif);font-size:1.4rem;margin-bottom:0.75rem;">
+        <a href="{{ .Permalink }}" style="color:var(--text-primary);transition:color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-primary)'">{{ .Title }}</a>
+      </h2>
+      <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:1rem;">{{ .Summary | truncate 200 }}</p>
+      <a href="{{ .Permalink }}" class="blog-read-more">Read more →</a>
+    </article>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
