@@ -1,4 +1,4 @@
-# sanjivranjanuk.github.io
+# dsm522.github.io
 
 Personal website for Sanjiv Ranjan — AI Adoption & Transformation Leader.
 
@@ -53,7 +53,7 @@ Output goes to `public/`. This is what you deploy.
 
 ## Deploy to GitHub Pages
 
-1. Create a repo named `<yourusername>.github.io`
+1. This repo is the GitHub Pages user-site repo for `dsm522.github.io`
 2. Push this `website/` directory (or the whole repo)
 3. In repo Settings → Pages → Source: **GitHub Actions**
 4. Add `.github/workflows/hugo.yml`:
@@ -84,7 +84,7 @@ jobs:
           publish_dir: ./public
 ```
 
-Update `baseURL` in `hugo.toml` to your actual URL before pushing.
+For production deploys, the workflow builds with `https://dsm522.github.io/` as the base URL.
 
 ---
 

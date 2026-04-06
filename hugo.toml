@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = 'https://dsm522.github.io/'
 languageCode = 'en-gb'
 title = 'Sanjiv Ranjan'
 theme = 'sr-theme'
