@@ -134,7 +134,7 @@
           <h3 class="blog-title">
             <a href="{{ .Permalink }}" style="color:inherit;text-decoration:none;">{{ .Title }}</a>
           </h3>
-          <p class="blog-excerpt">{{ .Plain | truncate 160 }}</p>
+          <p class="blog-excerpt">{{ .Summary | plainify | htmlUnescape | truncate 160 }}</p>
           <a href="{{ .Permalink }}" class="blog-read-more">Read more →</a>
         </div>
       </article>
