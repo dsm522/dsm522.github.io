@@ -1,16 +1,20 @@
 ---
-title: "Designing an AI-ready Operating Model for Delivery Knowledge and Reporting"
+title: "Designing an AI-ready operating model for delivery knowledge and reporting"
 date: 2026-06-02
-description: "AI-assisted reporting only works when the operating model underneath it is clear: ownership, source-of-truth rules, data quality, permissions, adoption and trust."
+description: "Moving from reporting noise to delivery insight."
 ---
 
----
+## Moving from Reporting Noise to Delivery Insight
+
+![Translating data into decision-ready insight](/images/blog/ai-ready-operational-reporting-1.webp)
+
+*Translating data into decision-ready insight*
 
 Most organisations do not have a reporting problem. They have an information system problem.
 
 The dashboard is usually where the pain shows up, but the root cause is further upstream. Teams update work in one place. Risks live somewhere else. Decisions are buried in meeting notes. Leadership papers get rewritten manually. Knowledge pages go stale. Then someone asks an AI tool to summarise the position and wonders why the answer is incomplete, vague or misleading.
 
-AI does not remove the need for good operational information. It raises the bar.
+AI does not remove the need for good operational information. It actually raises the bar.
 
 If we want AI-assisted reporting and knowledge discovery to work in real organisations, we have to design the operating model underneath it. That means standards, ownership, source-of-truth rules, data quality, adoption, permissions and clear reporting rhythms.
 
@@ -20,7 +24,7 @@ This is how I would design it.
 
 I would treat delivery tooling, documentation, analytics and AI-assisted discovery as one connected information system.
 
-The aim is simple:
+The aim here is simple:
 
 - teams know where to put operational information
 - leaders know which information they can trust
@@ -53,7 +57,7 @@ The shared data model should include things like:
 - link to supporting documentation
 - last updated date and source system
 
-The important part here is not just the fields. It's the definitions behind them.
+The important part here is not just the fields. It’s the definitions behind them.
 
 What does “blocked” mean? What does “at risk” mean? When is something genuinely “complete”? What is the difference between discovery, committed delivery and operational follow-up?
 
@@ -180,6 +184,10 @@ Publishing standards is easy. Getting people to use them is the work.
 
 I would start with user journeys rather than policy documents.
 
+![Driving adoption through user value](/images/blog/ai-ready-operational-reporting-2.png)
+
+*Drive adoption through user value*
+
 For teams, the question is: “What do I need to update, where do I update it, and how does it help me?”
 
 For leaders, the question is: “Which view should I use, what does it mean, and what decisions can I make from it?”
@@ -218,12 +226,10 @@ The test is simple.
 
 Teams update information once. Operational knowledge is easy to find and reuse. Leaders get reliable insight without manual reporting churn. AI helps people navigate the information estate without hiding uncertainty. Decisions are based on consistent evidence rather than fragmented updates.
 
+![](/images/blog/ai-ready-operational-reporting-3.png)
+
 That is what “AI-ready” looks like in practice.
 
 It is not just adding an AI tool to a messy operating model.
 
 It is doing the harder work of making the organisation’s knowledge, delivery data and reporting trustworthy enough for AI to be useful.
-
----
-
-© Sanjiv Ranjan 2026. This article is based on a framework I developed in May 2026. The wording, structure and framing are my own work.
