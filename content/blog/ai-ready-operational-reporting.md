@@ -2,6 +2,7 @@
 title: "Designing an AI-ready operating model for delivery knowledge and reporting"
 date: 2026-06-02
 description: "Moving from reporting noise to delivery insight."
+image: "/images/blog/ai-ready-operational-reporting-1.webp"
 ---
 
 ## Moving from Reporting Noise to Delivery Insight
